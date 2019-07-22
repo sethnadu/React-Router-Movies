@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
  function MovieCard({movie}) {
   
-   const { title, director, metascore, stars } = movie;
+   const { title, director, metascore, stars, saveMovie } = movie;
   return (
     
     <div className="movie-card">
@@ -21,7 +21,6 @@ import {Link} from "react-router-dom";
           {star}
         </div>
       ))}
-      <div className="save-button">Save</div>
     </div>
   );
 };
